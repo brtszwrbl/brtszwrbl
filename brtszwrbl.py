@@ -329,19 +329,20 @@
 # print(wynik)
 
 
-# def potega(liczba, wykladnik):
-#         if wykladnik == 0:
-#                 return 1
-#         elif wykladnik == 1:
-#                 return liczba
-#         elif wykladnik < 0:
-#                 return 1/liczba*potega(liczba,wykladnik-1)
-#         elif wykladnik > 1:
-#                 return liczba*potega(liczba, wykladnik -1)
+def potega(liczba, wykladnik):
+        if wykladnik == 0:
+                return 1
+        elif wykladnik == 1:
+                return liczba
+        elif wykladnik < 0:
+                return 1/liczba*potega(liczba,wykladnik-1)
+        elif wykladnik > 1:
+                return liczba*potega(liczba, wykladnik -1)
 
-# liczba = int(input("Wpisz liczbę: "))
-# wykladnik = int(input("Wpisz wykładnik: "))
-# wynik = potega(liczba, wykladnik)
-# print(wynik)
+liczba = int(input("Wpisz liczbę: "))
+wykladnik = int(input("Wpisz wykładnik: "))
+wynik = potega(liczba, wykladnik)
+print(wynik)
+
 
 
